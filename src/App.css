@@ -1,0 +1,207 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   BODY BACKGROUND
+========================= */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding-top: 60px;
+}
+
+/* =========================
+   MAIN CARD
+========================= */
+.task2 {
+  width: 500px;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* =========================
+   TITLE
+========================= */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* =========================
+   INPUT SECTION
+========================= */
+.input-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.4);
+  outline: none;
+}
+
+/* ADD / EDIT BUTTON */
+.input-box button {
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.4);
+}
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+.error-msg {
+  margin-top: 8px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* =========================
+   LIST CONTAINER
+========================= */
+.list-box {
+  margin-top: 25px;
+}
+
+/* =========================
+   TODO ITEM
+========================= */
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 14px 18px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  border-left: 5px solid #6a11cb;
+  transition: 0.3s;
+}
+
+.li:hover {
+  background: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   COMPLETED TEXT
+========================= */
+.makeline {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* =========================
+   BUTTON GROUP
+========================= */
+.btns {
+  display: flex;
+  gap: 12px;
+}
+
+/* COMMON ICON BUTTON */
+.btns button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 6px;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+/* =========================
+   COMPLETE BUTTON
+========================= */
+.btn-complete {
+  color: #777;
+}
+
+.btn-complete.completed {
+  color: #2ecc71;
+}
+
+.btn-complete:hover {
+  background: rgba(46, 204, 113, 0.15);
+  transform: scale(1.15);
+}
+
+/* =========================
+   EDIT BUTTON
+========================= */
+.btn-edit {
+  color: #3498db;
+}
+
+.btn-edit:hover {
+  background: rgba(52, 152, 219, 0.15);
+  transform: scale(1.15);
+}
+
+/* =========================
+   DELETE BUTTON
+========================= */
+.btn-delete {
+  color: #e74c3c;
+}
+
+.btn-delete:hover {
+  background: rgba(231, 76, 60, 0.15);
+  transform: scale(1.15);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
