@@ -14,6 +14,6 @@ export default function List({ val, setVal, addHandler, isEdit, error }) {
       </form>
 
       {error && <div className="error-msg">{error}</div>}
-    </>
-  )
+      </>
+      )
 }
